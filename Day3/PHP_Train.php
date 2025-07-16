@@ -4,77 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-dark">
     <div class="container mt-5 ">
         <div class="row">
             <form class="row g-3">
-      <div class="col-md-6">
-        <label for="validationServer01" class="form-label">Full Name</label>
-        <input type="text" class="form-control is-valid" id="validationServer01" value="Mohamed" required="">
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-6">
-        <label for="validationServerUsername" class="form-label">Username</label>
-        <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend3">@</span>
-          <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required="">
-          <div id="validationServerUsernameFeedback" class="invalid-feedback">
-            Enter your username.
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationServer03" class="form-label">age</label>
-        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required="">
-        <div id="validationServer03Feedback" class="invalid-feedback">
-         Enter Your age.
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationServer04" class="form-label">Gender</label>
-        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
-          <option selected="" disabled="" value="">Choose Your Gender</option>
-          <option>Male</option>
-          <option>Female</option>
-        </select>
-        <div id="validationServer04Feedback" class="invalid-feedback">
-         select Gender.
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationServer05" class="form-label">Grade</label>
-        <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required="">
-        <div id="validationServer05Feedback" class="invalid-feedback">
-         Enter num between 0-100.
-        </div>
-      </div>
-      </div>
-
-      <div class="mb-3">
-            <label for="validationTextarea" class="form-label">Notes</label>
-            <textarea class="form-control" id="validationTextarea" aria-describedby="validationServer05Feedback" placeholder="Required example textarea" required=""></textarea>
-        <div id="validationServer06Feedback" class="invalid-feedback">
-         Enter a message.
-        </div>
+                <div class="col-md-6">
+                  <label for="validationServer01" class="form-label">Full Name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mohamed" required="">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServerUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required="">
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                      Enter your username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer03" class="form-label">age</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required="">
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                  Enter Your age.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer04" class="form-label">Gender</label>
+                  <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                    <option selected="" disabled="" value="">Choose Your Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                  <div id="validationServer04Feedback" class="invalid-feedback">
+                  select Gender.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer05" class="form-label">Grade</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required="">
+                  <div id="validationServer05Feedback" class="invalid-feedback">
+                  Enter num between 0-100.
+                  </div>
+                </div>
+                <div class="mb-3 col-12">
+                      <label for="validationTextarea" class="form-label">Notes</label>
+                      <textarea class="form-control" id="validationTextarea" aria-describedby="validationServer05Feedback" placeholder="Required example textarea" required=""></textarea>
+                      <div id="validationServer06Feedback" class="invalid-feedback">
+                      Enter a message.
+                      </div>
+                </div>
+                <div class="col-6 col-md-6">
+                    <button class="btn btn-primary w-100" type="submit">Submit form</button>
+                </div>
+                <div class="col-md-6 " >
+                      <button type="button" class="btn btn-secondary  w-100" data-bs-toggle="modal" data-bs-target="#studentsModal">
+                        Show Students
+                      </button>
+                </div>
+      </div> 
     </div>
-      
-    <div class="col-6  mt-5 ">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
-
     </form>
-        </div>
-    </div> 
 
-    <div class=" container  mt-2" >
-  
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#studentsModal">
-    Show Students
-  </button>
 
 
   <div class="modal fade" id="studentsModal" tabindex="-1" aria-labelledby="studentsModalLabel" aria-hidden="true">
